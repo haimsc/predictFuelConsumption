@@ -2,6 +2,8 @@
 shinyUI(pageWithSidebar(
     headerPanel('Predict Fuel Consumption'),
     sidebarPanel(
+        h4("Click the User Guide tab for instructions", style = "color:red"),
+        br(),
         checkboxInput('am', 'Automatic', FALSE),
         numericInput('cyl', 'Number of Cylinders', 4,
                      min = 4, max = 8, step = 2),
