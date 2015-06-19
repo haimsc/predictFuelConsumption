@@ -1,0 +1,13 @@
+.exclaim .reveal .state-background {
+  background: whitw;
+} 
+
+.exclaim .reveal h1,
+.exclaim .reveal h2,
+.exclaim .reveal p {
+  color: white;
+}
+
+.exclaim .reveal section {
+  font-size: 28px
+}

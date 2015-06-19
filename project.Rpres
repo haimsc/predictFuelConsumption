@@ -1,0 +1,41 @@
+
+Predicting a Car's Fuel Consumption
+========================================================
+author: Haim Schneider
+date: June 18, 2015
+
+Overview
+========================================================
+
+This presentation was created as part of the course project for the course Developing Data Products by Johns Hopkins University. The project also includes an application for predicting the fuel consumption (MPG) of a car. The application was created with the Shiny R package, and is available at the following link:
+
+<a>https://haimsc.shinyapps.io/predictFuelConsumption</a> </br></br>
+<span style="color:red">Note: Click the User Guide tab for the app documentation</span> 
+
+The Prediction Model
+========================================================
+
+- The model was created using the mtcars data set
+- The linear model uses the following variables
+  + Transmission type
+  + Number of cylinders
+  + Number of carburetors
+  + Car weight
+- The next sildes present a summary of the model and the residuals vs fittet plot
+
+Summary of the linear model
+========================================================
+type: exclaim
+
+```{r, echo=FALSE}
+data(mtcars)
+fit <- lm(mpg ~ am + cyl + wt + carb, data=mtcars)
+summary(fit)
+```
+
+Residuals vs Fitted
+========================================================
+
+```{r, echo=FALSE}
+plot(fit,1)
+```
